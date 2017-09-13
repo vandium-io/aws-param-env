@@ -8,7 +8,7 @@ Module for loading parameter-store values from AWS SSM into environment variable
 ## Features
 * Loads parameters by path
 * Runs synchronously to that environment variables can be set before your code loads
-* Recursively loads and decoded parameters by default
+* Recursively loads and decodes parameters by default
 * Can run inside AWS Lambda environment
 * AWS Lambda Node.js 6.10.x compatible
 
