@@ -1,8 +1,20 @@
 {
   "name": "aws-param-env",
   "version": "1.0.0",
-  "description": "",
+  "description": "Module for synchronously loading AWS SSM Parameter Store values into environment variables",
   "main": "lib/index.js",
+  "keywords": [
+    "AWS",
+    "SSM",
+    "secret",
+    "parameter store",
+    "parameter",
+    "store",
+    "synchronously",
+    "synchronous",
+    "environment",
+    "env"
+  ],
   "scripts": {
     "test": "mocha --recursive",
     "coverage": "./node_modules/.bin/istanbul cover _mocha -- -R spec --recursive"
