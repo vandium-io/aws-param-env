@@ -2,6 +2,6 @@
 
 const awsParamEnv = require( '..' /*'aws-param-env'*/ );
 
-awsParamEnv.initializer( '/services/storage-system/production/env' ).execute();
+awsParamEnv.load( '/services/storage-system/production/env' );
 
 console.log( process.env );
