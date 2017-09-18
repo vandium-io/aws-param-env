@@ -35,4 +35,20 @@ describe( 'lib/index', function() {
             expect( EnvInitializerStub.calledWithNew() ).to.be.true;
         });
     });
+
+    describe( '.load', function() {
+
+        it( 'normal operation', function() {
+
+            initializerInstance.execute = sinon.stub();
+
+            awsParamEnv.load( '/my-service/env' );
+
+            expect( EnvInitializerStub.calledOnce ).to.be.true;
+            expect( EnvInitializerStub.calledWithNew() ).to.be.true;
+
+            expect( initializerInstance.execute.calledOnce ).to.be.true;
+            expect( initializerInstance.execute.firstCall.args ).to.eql( [] );
+        });
+    });
 });
