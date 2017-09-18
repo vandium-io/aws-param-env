@@ -24,10 +24,7 @@ Install via npm.
 ```js
 const awsParamEnv = require( 'aws-param-env' );
 
-awsParamEnv.initializer( '/my-service-path-in-ssm/env' ).execute();
-
-// process.env will now contain environment variables that were stored in SSM
-// parameter store path of '/my-service-path-in-ssm/env/'
+awsParamEnv.load( '/my-service-path-in-ssm/env' );
 ```
 
 ## Feedback
