@@ -27,6 +27,16 @@ const awsParamEnv = require( 'aws-param-env' );
 awsParamEnv.load( '/my-service-path-in-ssm/env' );
 ```
 
+If your AWS region is not set in your environment variables, then it can be set programmatically by supplying
+options when calling `load()`:
+
+```js
+const awsParamEnv = require( 'aws-param-env' );
+
+awsParamEnv.load( '/my-service-path-in-ssm/env', { region: 'us-east-1' } );
+```
+
+
 ## Feedback
 
 We'd love to get feedback on how to make this tool better. Feel free to contact us at `feedback@vandium.io`

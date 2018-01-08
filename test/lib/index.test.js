@@ -50,5 +50,19 @@ describe( 'lib/index', function() {
             expect( initializerInstance.execute.calledOnce ).to.be.true;
             expect( initializerInstance.execute.firstCall.args ).to.eql( [] );
         });
+
+        it( 'with options', function() {
+
+            initializerInstance.execute = sinon.stub();
+
+            awsParamEnv.load( '/my-service/env', { region: 'us-east-1' } );
+
+            expect( EnvInitializerStub.calledOnce ).to.be.true;
+            expect( EnvInitializerStub.calledWithNew() ).to.be.true;
+            expect( EnvInitializerStub.firstCall.args ).to.eql( [ '/my-service/env', { region: 'us-east-1' } ] );
+
+            expect( initializerInstance.execute.calledOnce ).to.be.true;
+            expect( initializerInstance.execute.firstCall.args ).to.eql( [] );
+        });
     });
 });

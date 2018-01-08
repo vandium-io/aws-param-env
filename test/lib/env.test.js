@@ -45,10 +45,18 @@ describe( 'lib/env', function() {
 
             it( 'normal operation', function() {
 
-                let instance = new EnvInitializer( '/my-service/env' );
+                new EnvInitializer( '/my-service/env' );
 
                 expect( awsParamStoreStub.newQuery.calledOnce ).to.be.true;
-                expect( awsParamStoreStub.newQuery.firstCall.args ).to.eql( [ '/my-service/env' ] );
+                expect( awsParamStoreStub.newQuery.firstCall.args ).to.eql( [ '/my-service/env', undefined ] );
+            });
+
+            it( 'with options', function() {
+
+                new EnvInitializer( '/my-service/env', { region: 'us-east-1' } );
+
+                expect( awsParamStoreStub.newQuery.calledOnce ).to.be.true;
+                expect( awsParamStoreStub.newQuery.firstCall.args ).to.eql( [ '/my-service/env', { region: 'us-east-1' } ] );
             });
         });
 
