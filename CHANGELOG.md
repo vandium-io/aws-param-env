@@ -1,5 +1,11 @@
 # Change Log
 
+## 2.0.0 (2019-11-04)
+
+Updated:
+
+* Node 10.x and higher
+
 ## 1.2.0 (2018-01-08)
 
 Improved:

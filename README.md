@@ -10,7 +10,7 @@ Module for loading parameter-store values from AWS SSM into environment variable
 * Runs synchronously to that environment variables can be set before your code loads
 * Recursively loads and decodes parameters by default
 * Can run inside AWS Lambda environment
-* AWS Lambda Node.js 6.10.x compatible
+* AWS Lambda Node.js 10.x compatible
 
 ## Installation
 Install via npm.
