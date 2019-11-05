@@ -39,7 +39,7 @@
   "license": "BSD-3-Clause",
   "files": [
     "/lib"
-  ],  
+  ],
   "peerDependencies": {
     "aws-sdk": "^2.563.0"
   },

@@ -2,6 +2,10 @@
 
 ## 2.0.0 (2019-11-04)
 
+New:
+
+* Added support for automatically loading via environment variable: `AWS_SSM_ENV_PATH`
+
 Updated:
 
 * Node 10.x and higher
