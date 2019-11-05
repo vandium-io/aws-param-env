@@ -16,7 +16,7 @@
     "env"
   ],
   "scripts": {
-    "test": "nyc mocha --recursive"
+    "test": "nyc mocha 'lib/**/__tests__/*' --recursive"
   },
   "nyc": {
     "check-coverage": true,
@@ -37,6 +37,9 @@
   },
   "author": "Vandium Software Inc.",
   "license": "BSD-3-Clause",
+  "files": [
+    "/lib"
+  ],  
   "peerDependencies": {
     "aws-sdk": "^2.563.0"
   },

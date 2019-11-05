@@ -5,6 +5,12 @@
 Updated:
 
 * Node 10.x and higher
+* Added `aws-sdk` as a peer dependency
+
+Internal:
+
+* Updated dependencies
+* Refactored tests
 
 ## 1.2.0 (2018-01-08)
 
