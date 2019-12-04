@@ -1,6 +1,6 @@
 {
   "name": "aws-param-env",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Module for synchronously loading AWS SSM Parameter Store values into environment variables",
   "main": "lib/index.js",
   "keywords": [
@@ -40,19 +40,16 @@
   "files": [
     "/lib"
   ],
-  "peerDependencies": {
-    "aws-sdk": "^2.563.0"
-  },
   "devDependencies": {
-    "aws-sdk": "^2.563.0",
+    "aws-sdk": "^2.584.0",
     "chai": "^4.1.2",
     "env-restorer": "^1.0.0",
-    "proxyquire": "^2.1.3",
     "mocha": "^6.2.2",
     "nyc": "^14.1.1",
+    "proxyquire": "^2.1.3",
     "sinon": "^7.5.0"
   },
   "dependencies": {
-    "aws-param-store": "^3.1.0"
+    "aws-param-store": "^3.2.0"
   }
 }

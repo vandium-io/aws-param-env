@@ -1,5 +1,15 @@
 # Change Log
 
+## 2.1.0 (2019-12-04)
+
+Updated:
+
+* `aws-sdk` peer dependency removed. Will use peer dependency set in `aws-param-store`
+
+Internal:
+
+* Updated dependencies
+
 ## 2.0.0 (2019-11-04)
 
 New:
