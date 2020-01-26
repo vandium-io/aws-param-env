@@ -1,5 +1,15 @@
 # Change Log
 
+## 3.0.0 (TBD)
+
+Breaking:
+
+* Node 12 or higher as required by `aws-param-store`
+
+Internal:
+
+* Changed to use `getParametersByPathSync()`
+
 ## 2.1.0 (2019-12-04)
 
 Updated:
